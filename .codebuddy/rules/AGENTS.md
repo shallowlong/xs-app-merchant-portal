@@ -56,6 +56,7 @@
 | 唯一数据源（导航/文案/SEO 全量） | `src/data/site-data.json` |
 | 通用工具函数 | `src/utils/` |
 | 链接健康检查脚本 | `scripts/` |
+| 部署配置（Vercel） | `vercel.json` |
 | 文档 / 方案 | `docs/` |
 
 ## 3. 知识库与文档归档
