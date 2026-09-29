@@ -1,0 +1,91 @@
+#!/usr/bin/env node
+'use strict';
+
+/**
+ * 幽灵依赖检查（零依赖，CI 使用）
+ *
+ * 校验 test/（或配置的测试目录）中 require/import 的包是否已声明在 package.json。
+ * 防止「本地因 Node 模块提升能跑、CI 因扁平度不同而失败」的幽灵依赖问题。
+ *
+ * 用法：
+ *   node ci/check-require-decls.cjs [--test-dir test]
+ *
+ * 来自 ai-dev-conventions-scaffold 通用模板。
+ */
+
+const fs = require('fs');
+const path = require('path');
+const { execSync } = require('child_process');
+
+const ROOT = path.join(__dirname, '..');
+const args = process.argv.slice(2);
+const testDir = (args.find((a) => a.startsWith('--test-dir=')) || '--test-dir=test')
+  .split('=')[1];
+
+function getDeps() {
+  const pj = path.join(ROOT, 'package.json');
+  if (!fs.existsSync(pj)) return new Set();
+  const json = JSON.parse(fs.readFileSync(pj, 'utf8'));
+  return new Set([
+    ...Object.keys(json.dependencies || {}),
+    ...Object.keys(json.devDependencies || {}),
+  ]);
+}
+
+function findTestFiles(dir) {
+  if (!fs.existsSync(dir)) return [];
+  return execSync(`dir /s /b "${dir}"`, { shell: true })
+    .toString()
+    .split(/\r?\n/)
+    .filter((f) => /\.(js|ts|mjs|cjs)$/.test(f.trim()))
+    .map((f) => f.trim());
+}
+
+function main() {
+  const pkgPath = path.join(ROOT, 'package.json');
+  if (!fs.existsSync(pkgPath)) {
+    console.error('package.json 不存在，跳过幽灵依赖检查。');
+    process.exit(0);
+  }
+  const deps = getDeps();
+  const files = findTestFiles(path.join(ROOT, testDir));
+  if (files.length === 0) {
+    console.log('未找到测试文件，跳过幽灵依赖检查。');
+    process.exit(0);
+  }
+  const builtins = new Set([
+    'path', 'fs', 'os', 'util', 'crypto', 'http', 'https', 'url', 'assert',
+    'stream', 'events', 'child_process', 'querystring', 'zlib', 'buffer',
+    'process', 'module', 'readline', 'dns', 'net', 'tls', 'tty', 'vm',
+    'string_decoder', 'timers', 'console', 'perf_hooks', 'async_hooks',
+  ]);
+  const errors = [];
+  const pkgRe = /require\(\s*['"]([^'"\.][^'"]*?)['"]\s*\)|import\s+[^'"]*?from\s*['"]([^'"\.][^'"]*?)['"]/g;
+  for (const file of files) {
+    const text = fs.readFileSync(file, 'utf8');
+    let m;
+    while ((m = pkgRe.exec(text)) !== null) {
+      const mod = m[1] || m[2];
+      // 去掉 `node:` 内置模块前缀（node:fs / node:path 等），再取包名
+      const top = mod.replace(/^node:/, '').split('/')[0].replace(/^@[^/]+\//, '');
+      if (builtins.has(top)) continue;
+      if (mod.startsWith('.')) continue; // 相对路径
+      // 源码路径别名（如 vite resolve.alias 的 `@/`），不是 npm 包，不能按 scoped package 处理
+      if (mod.startsWith('@/')) continue;
+      if (top.startsWith('@')) {
+        const scope = mod.split('/').slice(0, 2).join('/');
+        if (!deps.has(scope)) errors.push(`${path.relative(ROOT, file)}: 未声明的包 ${scope}`);
+      } else if (!deps.has(top)) {
+        errors.push(`${path.relative(ROOT, file)}: 未声明的包 ${top}`);
+      }
+    }
+  }
+  if (errors.length > 0) {
+    console.error('幽灵依赖检查失败:');
+    for (const e of errors) console.error(`  - ${e}`);
+    process.exit(1);
+  }
+  console.log('幽灵依赖检查通过。');
+}
+
+main();
