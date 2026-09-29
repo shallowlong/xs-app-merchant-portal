@@ -1,0 +1,3668 @@
+{
+	"meta": {
+		"version": "2.0.0",
+		"schemaVersion": "2.0.0",
+		"siteName": "电商人工具门户站",
+		"siteSubtitle": "电商零售运营工具导航",
+		"source": "https://pages.fangzhibao.com/onlineretailertool",
+		"sourceTitle": "纺支宝服装网 - 电商零售工具导航",
+		"fetchedAt": "2026-08-07T00:00:00+08:00",
+		"updatedAt": "2026-09-29T00:00:00+08:00",
+		"healthCheckedAt": "2026-09-29T00:00:00+08:00"
+	},
+	"seo": {
+		"description": "电商人工具门户站 - 电商零售运营工具导航，一站式聚合各大电商平台运营工具与设计资源",
+		"keywords": "电商工具,运营工具,电商导航,设计资源,视频剪辑,AI工具"
+	},
+	"ui": {
+		"header": {
+			"logoIcon": "🛍️",
+			"statTemplate": "共收录 {count} 个工具"
+		},
+		"sidebar": {
+			"sectionTitle": "工具分类",
+			"footerText": "工具数据持续更新中",
+			"categoryTooltip": "{name}（{count} 个工具）"
+		},
+		"home": {
+			"greeting": "发现 {count} 个电商运营工具",
+			"searchPlaceholder": "搜索工具名称、描述或标签（如：抖音、数据分析、AI）...",
+			"searchResultTitle": "搜索 \"{keyword}\" 共找到 {count} 个结果",
+			"clearSearch": "清除搜索",
+			"loadingText": "正在加载工具数据...",
+			"empty": {
+				"icon": "📭",
+				"title": "暂无数据",
+				"description": "数据加载中，请稍候..."
+			}
+		},
+		"labels": {
+			"brokenBadge": "失效",
+			"errorText": "数据加载失败，请稍后重试"
+		},
+		"footer": {
+			"links": [
+				{
+					"id": "ftr-001",
+					"label": "首页",
+					"kind": "route",
+					"to": "/"
+				},
+				{
+					"id": "ftr-002",
+					"label": "隐私政策",
+					"kind": "modal",
+					"modal": "privacy"
+				},
+				{
+					"id": "ftr-003",
+					"label": "免责声明",
+					"kind": "modal",
+					"modal": "disclaimer"
+				},
+				{
+					"id": "ftr-004",
+					"label": "联系我们",
+					"kind": "modal",
+					"modal": "contact"
+				}
+			],
+			"notice": "本站为导航聚合类网站，所有链接均指向第三方网站，本站不对第三方内容负责。",
+			"copyright": {
+				"years": "2025-2026",
+				"displayName": "奚叔2099",
+				"homepage": "https://xishu2099.top",
+				"license": "MIT",
+				"template": "© {years} {displayName} · {homepage} · {license} License"
+			},
+			"modals": {
+				"privacy": {
+					"title": "隐私政策",
+					"sections": [
+						{
+							"heading": "一、信息收集",
+							"paragraphs": [
+								"本站为纯静态导航页面，不主动收集、存储用户的任何个人信息。当您点击本站收录的第三方链接时，您与第三方网站之间的交互受该第三方网站的隐私政策约束。"
+							]
+						},
+						{
+							"heading": "二、Cookie 与本地存储",
+							"paragraphs": [
+								"本站不使用 Cookie，也不写入浏览器本地存储（localStorage / sessionStorage），不会在您的设备上留存任何标识、偏好或浏览记录。"
+							]
+						},
+						{
+							"heading": "三、第三方资源请求",
+							"paragraphs": [
+								"为在工具列表中展示各站点图标，您的浏览器会向第三方发起图片请求，第三方因此可以获知您的 IP 地址与请求时间。请求对象包括被收录工具站点自身的 favicon.ico，以及图标服务 api.xinac.net。",
+								"本站已对这些请求设置 no-referrer 来源策略（不向第三方传递来源页地址），并采用懒加载——仅当图标滚动进入可视区域时才发起请求。",
+								"如您不希望产生上述请求，可使用浏览器的内容拦截功能屏蔽 api.xinac.net 及第三方图片，页面功能不受影响（图标会降级为文字首字色块）。"
+							]
+						},
+						{
+							"heading": "四、日志与统计",
+							"paragraphs": [
+								"本站托管平台可能自动收集访问日志（包括 IP 地址、浏览器类型、访问时间等），用于基本的流量分析和安全防护。这些数据的使用受托管平台的隐私政策约束。"
+							]
+						},
+						{
+							"heading": "五、第三方链接",
+							"paragraphs": [
+								"本站收录了大量第三方网站链接，我们对第三方网站的隐私保护措施不负任何责任。建议您在访问任何第三方网站时，查阅其隐私政策。"
+							]
+						},
+						{
+							"heading": "六、政策更新",
+							"paragraphs": [
+								"我们可能会不时更新本隐私政策，更新后的政策将在本页面发布。"
+							]
+						}
+					]
+				},
+				"disclaimer": {
+					"title": "免责声明",
+					"sections": [
+						{
+							"heading": "一、服务性质",
+							"paragraphs": [
+								"「电商人工具门户站」是一个非营利性质的导航聚合平台，旨在为电商从业者提供便捷的工具入口导航服务。本站不对任何收录网站的内容、服务质量及商业行为承担任何责任。"
+							]
+						},
+						{
+							"heading": "二、链接准确性",
+							"paragraphs": [
+								"本站尽力保证链接的有效性和准确性，但由于第三方网站可能随时变更域名、调整站点结构或停止服务，我们无法保证所有链接 100% 可用。如发现失效链接，欢迎联系我们进行更新。"
+							]
+						},
+						{
+							"heading": "三、知识产权",
+							"paragraphs": [
+								"本站收录的网站名称、商标、LOGO 等归各自权利人所有。本站仅作导航引用，不构成任何形式的商业合作或背书。"
+							]
+						},
+						{
+							"heading": "四、使用风险",
+							"paragraphs": [
+								"用户通过本站链接访问第三方网站时，由此产生的任何风险（包括但不限于信息泄露、财产损失、病毒感染等）由用户自行承担。"
+							]
+						},
+						{
+							"heading": "五、免责范围",
+							"paragraphs": [
+								"在法律允许的最大范围内，本站不对因使用或无法使用本站服务而导致的任何直接、间接、附带、特殊或后果性损失承担责任。"
+							]
+						}
+					]
+				},
+				"contact": {
+					"title": "联系我们",
+					"items": [
+						{
+							"label": "📧 邮箱：",
+							"value": "shallowlong@gmail.com"
+						},
+						{
+							"label": "💬 反馈：",
+							"value": "如发现链接失效或需要新增工具分类，欢迎通过邮件与我们联系。"
+						},
+						{
+							"label": "🔗 合作：",
+							"value": "如需交换友链或进行内容合作，请邮件沟通。"
+						}
+					]
+				}
+			}
+		}
+	},
+	"quickLinks": [
+		{
+			"id": "ql-001",
+			"name": "纺支宝首页",
+			"url": "https://www.fangzhibao.com/cs",
+			"sortOrder": 1
+		},
+		{
+			"id": "ql-002",
+			"name": "登录",
+			"url": "https://login.fangzhibao.com/?ref_url=https%3A%2F%2Fpages.fangzhibao.com%2Fonlineretailertool",
+			"sortOrder": 2
+		},
+		{
+			"id": "ql-003",
+			"name": "免费注册",
+			"url": "https://login.fangzhibao.com/login/login/register",
+			"sortOrder": 3
+		},
+		{
+			"id": "ql-004",
+			"name": "招商入驻",
+			"url": "https://www.fangzhibao.com/cs/index.php?act=show_joinin&op=register_store",
+			"sortOrder": 4
+		},
+		{
+			"id": "ql-005",
+			"name": "商家登录",
+			"url": "https://seller.fangzhibao.com/",
+			"sortOrder": 5
+		},
+		{
+			"id": "ql-006",
+			"name": "订单列表",
+			"url": "https://pages.fangzhibao.com/onlineretailertool",
+			"sortOrder": 6
+		}
+	],
+	"categories": [
+		{
+			"id": "sourcing",
+			"name": "货源网站",
+			"icon": "🏭",
+			"description": "服装与小商品一手货源、批发采购平台入口",
+			"sortOrder": 1,
+			"subcategories": [
+				{
+					"id": "sourcing-general",
+					"name": "综合批发平台",
+					"description": "覆盖多品类的综合型批发采购平台",
+					"sortOrder": 1,
+					"links": [
+						{
+							"id": "lnk-215",
+							"name": "生意网",
+							"url": "https://www.3e3e.cn/",
+							"description": "湖州织里童装产业带货源平台，7000+ 厂家入驻，支持一件起批、一件代发",
+							"tags": [
+								"童装",
+								"织里",
+								"一件代发"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-216",
+							"name": "纺支宝",
+							"url": "https://www.fangzhibao.com/",
+							"description": "服装产业带货源与商家服务平台，提供招商入驻与供应链服务",
+							"tags": [
+								"服装",
+								"供应链",
+								"商家服务"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-217",
+							"name": "阿里巴巴 1688",
+							"url": "https://www.1688.com/",
+							"description": "全球领先的采购批发平台，覆盖原材料、工业品、服装服饰、家居百货等大类",
+							"tags": [
+								"综合批发",
+								"B2B",
+								"源头厂货"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-218",
+							"name": "义乌购",
+							"url": "https://www.yiwugo.com/",
+							"description": "义乌小商品城官方线上市场，小商品批发采购与市场行情",
+							"tags": [
+								"小商品",
+								"义乌",
+								"综合批发"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-219",
+							"name": "中国制造网",
+							"url": "https://www.made-in-china.com/",
+							"description": "面向全球采购商的中国供应商目录与 B2B 采购平台",
+							"tags": [
+								"B2B",
+								"外贸",
+								"供应商"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-220",
+							"name": "中国供应商",
+							"url": "https://cn.china.cn/",
+							"description": "B2B 信息平台，提供企业黄页与产品采购信息",
+							"tags": [
+								"B2B",
+								"企业黄页",
+								"采购信息"
+							],
+							"sortOrder": 6,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "sourcing-apparel",
+					"name": "服装垂直货源",
+					"description": "对接各大服装批发市场档口的垂直货源平台",
+					"sortOrder": 2,
+					"links": [
+						{
+							"id": "lnk-221",
+							"name": "搜款网",
+							"url": "https://www.vvic.com/",
+							"description": "广州最大网批平台，覆盖沙河、十三行、白马等批发市场，支持一键铺货与一件代发",
+							"tags": [
+								"女装",
+								"广州",
+								"一件代发"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-222",
+							"name": "17货源",
+							"url": "https://www.17zwd.com/",
+							"description": "一起做网店旗下服装货源平台，聚合全国批发市场档口，支持一件起批",
+							"tags": [
+								"服装",
+								"档口货源",
+								"一件起批"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-223",
+							"name": "四季星座网",
+							"url": "https://www.sjxz.cc/",
+							"description": "深耕杭州四季青服装批发市场，整合女装、男装一手货源档口",
+							"tags": [
+								"四季青",
+								"女装",
+								"档口货源"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": "原 https://www.571xz.com/ 已 301 迁移至 https://www.sjxz.cc/（探测于 2026-09-29）"
+						},
+						{
+							"id": "lnk-224",
+							"name": "青创网",
+							"url": "https://www.17qcc.com/",
+							"description": "鞋服采购批发平台，对接真实档口一手货源",
+							"tags": [
+								"鞋服",
+								"档口货源",
+								"批发"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-225",
+							"name": "网商园",
+							"url": "https://www.wsy.com/",
+							"description": "杭州女装网批平台，提供一件代发与货源分销",
+							"tags": [
+								"女装",
+								"杭州",
+								"一件代发"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-226",
+							"name": "搜鞋网",
+							"url": "https://www.sooxie.com/",
+							"description": "鞋类一手货源批发平台，支持一件代发",
+							"tags": [
+								"鞋类",
+								"一手货源",
+								"一件代发"
+							],
+							"sortOrder": 6,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "sourcing-kids",
+					"name": "童装童品",
+					"description": "童装产业带货源与品牌加盟信息",
+					"sortOrder": 3,
+					"links": [
+						{
+							"id": "lnk-227",
+							"name": "织里儿童网",
+							"url": "https://www.2tong.vip/",
+							"description": "扎根湖州织里童装产业带，整合织里童装厂家货源",
+							"tags": [
+								"童装",
+								"织里",
+								"产业带"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-228",
+							"name": "猎货网",
+							"url": "https://www.59ds.com/",
+							"description": "入驻 7000+ 童装厂家，提供一手童装货源，支持一件起批、一件代发",
+							"tags": [
+								"童装",
+								"一手货源",
+								"一件代发"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-229",
+							"name": "童装网",
+							"url": "https://www.61kids.cn/",
+							"description": "童装品牌、加盟店与排行榜信息门户",
+							"tags": [
+								"童装",
+								"品牌加盟",
+								"行业资讯"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "sourcing-home-cross",
+					"name": "家纺纺织与跨境",
+					"description": "家纺纺织货源及跨境批发出口渠道",
+					"sortOrder": 4,
+					"links": [
+						{
+							"id": "lnk-230",
+							"name": "91家纺网",
+							"url": "https://www.91jf.com/",
+							"description": "叠石桥家纺网销导航，家纺一手货源直供，支持一件代发",
+							"tags": [
+								"家纺",
+								"叠石桥",
+								"一件代发"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-231",
+							"name": "全球纺织网",
+							"url": "https://www.tnc.com.cn/",
+							"description": "纺织面料行业 B2B 交易平台，面料采购与供应商信息",
+							"tags": [
+								"面料",
+								"纺织",
+								"B2B"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-232",
+							"name": "世界服装鞋帽网",
+							"url": "https://www.sjfzxm.com/",
+							"description": "服装鞋帽行业资讯与商机门户，涵盖行业动态与供求信息",
+							"tags": [
+								"服装鞋帽",
+								"行业资讯",
+								"供求信息"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-233",
+							"name": "敦煌网",
+							"url": "https://www.dhgate.com/",
+							"description": "面向全球市场的跨境电商 B2B 批发平台",
+							"tags": [
+								"跨境电商",
+								"B2B",
+								"出口"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-234",
+							"name": "速卖通",
+							"url": "https://www.aliexpress.com/",
+							"description": "阿里巴巴旗下跨境出口零售平台，覆盖全球 200+ 国家和地区",
+							"tags": [
+								"跨境电商",
+								"零售出口",
+								"全球"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ecommerce-platforms",
+			"name": "电商平台运营",
+			"icon": "🛒",
+			"description": "各大电商平台官方后台及运营工具入口",
+			"sortOrder": 2,
+			"subcategories": [
+				{
+					"id": "ecommerce-data-tools",
+					"name": "电商数据分析工具",
+					"description": "跨平台电商数据分析和运营辅助工具",
+					"sortOrder": 1,
+					"links": [
+						{
+							"id": "lnk-001",
+							"name": "至尊宝",
+							"url": "https://zzbtool.com/index.html",
+							"description": "电商数据运营工具",
+							"tags": [
+								"数据分析",
+								"运营工具"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": "原域名 zzb.3977s.com 已跳转，已更新为最新 URL"
+						},
+						{
+							"id": "lnk-002",
+							"name": "哈士奇",
+							"url": "https://hsq.dangxun.com/",
+							"description": "浏览器插件，支持淘宝/天猫/1688/拼多多/京东/抖店",
+							"tags": [
+								"浏览器插件",
+								"多平台",
+								"运营工具"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-003",
+							"name": "店透视",
+							"url": "https://diantoushi.com/",
+							"description": "一站式电商数据分析，支持淘宝/京东/1688/抖音/跨境",
+							"tags": [
+								"数据分析",
+								"多平台",
+								"运营工具"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-004",
+							"name": "店查查",
+							"url": "https://www.dianchacha.com/",
+							"description": "电商店铺数据分析工具",
+							"tags": [
+								"数据分析",
+								"店铺分析"
+							],
+							"sortOrder": 4,
+							"status": "broken",
+							"note": "抽样验证超时，可能暂时不可用"
+						},
+						{
+							"id": "lnk-005",
+							"name": "小旺神",
+							"url": "https://xiaowangshen.com/",
+							"description": "电商运营辅助工具",
+							"tags": [
+								"运营工具",
+								"数据分析"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": "原链接 404，已修正为首页 URL"
+						},
+						{
+							"id": "lnk-006",
+							"name": "旺参谋",
+							"url": "https://wangcanmou.com/",
+							"description": "1688 数据辅助分析插件",
+							"tags": [
+								"1688",
+								"数据分析",
+								"浏览器插件"
+							],
+							"sortOrder": 6,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-007",
+							"name": "口袋参谋",
+							"url": "https://www.koudai89.com/",
+							"description": "电商运营工具箱，竞品分析、蓝海词挖掘",
+							"tags": [
+								"运营工具",
+								"竞品分析"
+							],
+							"sortOrder": 7,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-008",
+							"name": "郑和数据",
+							"url": "https://zhenghedata.com/dashboard?from=browser",
+							"description": "TikTok 数据分析工具，选爆品、查竞店、找达人",
+							"tags": [
+								"TikTok",
+								"数据分析",
+								"跨境电商"
+							],
+							"sortOrder": 8,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-009",
+							"name": "灰豚数据",
+							"url": "https://huitun.com/",
+							"description": "短视频 & 直播电商数据分析平台",
+							"tags": [
+								"短视频",
+								"直播电商",
+								"数据分析"
+							],
+							"sortOrder": 9,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "douyin",
+					"name": "抖音电商",
+					"description": "抖音电商平台官方工具入口",
+					"sortOrder": 2,
+					"links": [
+						{
+							"id": "lnk-010",
+							"name": "抖音",
+							"url": "https://www.douyin.com/",
+							"description": "抖音主站",
+							"tags": [
+								"抖音",
+								"平台首页"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-011",
+							"name": "抖音数据",
+							"url": "https://dy.huitun.com/app/#/dashboard",
+							"description": "灰豚旗下抖音数据分析平台",
+							"tags": [
+								"抖音",
+								"数据分析"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-012",
+							"name": "抖店后台",
+							"url": "https://fxg.jinritemai.com/",
+							"description": "抖音商家管理后台",
+							"tags": [
+								"抖音",
+								"商家后台"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-013",
+							"name": "抖音电商",
+							"url": "https://www.douyinec.com/",
+							"description": "抖音电商官方平台",
+							"tags": [
+								"抖音",
+								"电商平台"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-014",
+							"name": "电商罗盘",
+							"url": "https://compass.jinritemai.com/",
+							"description": "抖音电商数据罗盘",
+							"tags": [
+								"抖音",
+								"数据分析",
+								"罗盘"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-015",
+							"name": "巨量千川",
+							"url": "https://qianchuan.jinritemai.com/",
+							"description": "抖音电商广告投放平台",
+							"tags": [
+								"抖音",
+								"广告投放"
+							],
+							"sortOrder": 6,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-016",
+							"name": "巨量引擎",
+							"url": "https://business.oceanengine.com/brand/index",
+							"description": "字节跳动旗下广告投放平台",
+							"tags": [
+								"字节跳动",
+								"广告投放"
+							],
+							"sortOrder": 7,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-017",
+							"name": "巨量云图",
+							"url": "https://yuntu.oceanengine.com/yuntu_ng/login",
+							"description": "数据资产管理平台",
+							"tags": [
+								"字节跳动",
+								"数据分析",
+								"云图"
+							],
+							"sortOrder": 8,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-018",
+							"name": "巨量方舟",
+							"url": "https://agent.oceanengine.com/",
+							"description": "巨量引擎代理商工作台",
+							"tags": [
+								"字节跳动",
+								"代理商"
+							],
+							"sortOrder": 9,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "taobao",
+					"name": "淘宝/天猫",
+					"description": "淘宝/天猫平台官方工具入口",
+					"sortOrder": 3,
+					"links": [
+						{
+							"id": "lnk-019",
+							"name": "淘宝网",
+							"url": "https://www.taobao.com/",
+							"description": "淘宝网主站",
+							"tags": [
+								"淘宝",
+								"平台首页"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-020",
+							"name": "生意参谋",
+							"url": "https://sycm.taobao.com/custom/enterprise_info",
+							"description": "淘宝/天猫官方数据分析工具",
+							"tags": [
+								"淘宝",
+								"数据分析"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-021",
+							"name": "直通车",
+							"url": "https://subway.simba.taobao.com/",
+							"description": "淘宝/天猫搜索推广工具",
+							"tags": [
+								"淘宝",
+								"推广",
+								"搜索广告"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-022",
+							"name": "达摩盘",
+							"url": "https://dmp.taobao.com/",
+							"description": "阿里妈妈 DMP 数据管理平台",
+							"tags": [
+								"淘宝",
+								"DMP",
+								"数据管理"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-023",
+							"name": "引力魔方",
+							"url": "https://tuijian.taobao.com/index.html",
+							"description": "淘宝推荐场景推广工具",
+							"tags": [
+								"淘宝",
+								"推广",
+								"推荐广告"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-024",
+							"name": "万相台无界",
+							"url": "https://one.alimama.com/index.html",
+							"description": "阿里妈妈一站式智能投放平台",
+							"tags": [
+								"淘宝",
+								"推广",
+								"智能投放"
+							],
+							"sortOrder": 6,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "pinduoduo",
+					"name": "拼多多",
+					"description": "拼多多平台官方工具入口",
+					"sortOrder": 4,
+					"links": [
+						{
+							"id": "lnk-025",
+							"name": "多多官网",
+							"url": "https://www.pinduoduo.com/",
+							"description": "拼多多官方网站",
+							"tags": [
+								"拼多多",
+								"平台首页"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-026",
+							"name": "多多商城",
+							"url": "https://mobile.yangkeduo.com/",
+							"description": "拼多多移动商城",
+							"tags": [
+								"拼多多",
+								"商城"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-027",
+							"name": "商家后台",
+							"url": "https://mms.pinduoduo.com/home/",
+							"description": "拼多多商家管理后台",
+							"tags": [
+								"拼多多",
+								"商家后台"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-028",
+							"name": "多多推广",
+							"url": "https://yingxiao.pinduoduo.com/mains/guide",
+							"description": "拼多多营销推广平台",
+							"tags": [
+								"拼多多",
+								"推广"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-029",
+							"name": "多多批发",
+							"url": "https://pifa.pinduoduo.com/",
+							"description": "拼多多批发平台",
+							"tags": [
+								"拼多多",
+								"批发"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-030",
+							"name": "多多直播",
+							"url": "https://live.pinduoduo.com/n-creator/live/home?from=mms",
+							"description": "拼多多直播平台",
+							"tags": [
+								"拼多多",
+								"直播"
+							],
+							"sortOrder": 6,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-031",
+							"name": "多多进宝",
+							"url": "https://jinbao.pinduoduo.com/",
+							"description": "拼多多推广联盟平台",
+							"tags": [
+								"拼多多",
+								"推广联盟",
+								"CPS"
+							],
+							"sortOrder": 7,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-032",
+							"name": "多多课堂",
+							"url": "https://mms.pinduoduo.com/daxue/home",
+							"description": "拼多多官方培训学习平台",
+							"tags": [
+								"拼多多",
+								"培训",
+								"学习"
+							],
+							"sortOrder": 8,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-033",
+							"name": "营销书院",
+							"url": "https://shuyuan.pinduoduo.com/",
+							"description": "拼多多营销知识学习平台",
+							"tags": [
+								"拼多多",
+								"营销",
+								"学习"
+							],
+							"sortOrder": 9,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "jd",
+					"name": "京东",
+					"description": "京东平台官方工具入口",
+					"sortOrder": 5,
+					"links": [
+						{
+							"id": "lnk-034",
+							"name": "京东商城",
+							"url": "https://www.jd.com/",
+							"description": "京东商城主站",
+							"tags": [
+								"京东",
+								"平台首页"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-035",
+							"name": "商家后台",
+							"url": "https://passport.shop.jd.com/login/index.action?ReturnUrl=https%3A%2F%2Fshop.jd.com%2F",
+							"description": "京东商家管理后台（京麦）",
+							"tags": [
+								"京东",
+								"商家后台"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-036",
+							"name": "京东商智",
+							"url": "https://sz.jd.com/sz/view/index/login.html?ReturnUrl=http%3A%2F%2Fsz.jd.com%2Fsz%2Fview%2FnotAuthorized.html",
+							"description": "京东官方数据分析工具",
+							"tags": [
+								"京东",
+								"数据分析"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-037",
+							"name": "京准通",
+							"url": "https://jzt.jd.com/gw/index",
+							"description": "京东广告投放平台",
+							"tags": [
+								"京东",
+								"广告投放"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-038",
+							"name": "京挑客推广",
+							"url": "https://jzt.jd.com/gw/jtkhome/",
+							"description": "京东 CPS 推广联盟平台",
+							"tags": [
+								"京东",
+								"CPS",
+								"推广联盟"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-039",
+							"name": "京东直投",
+							"url": "https://jzt.jd.com/gw/jdzt/",
+							"description": "京东站外广告直投平台",
+							"tags": [
+								"京东",
+								"广告投放"
+							],
+							"sortOrder": 6,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "xiaohongshu",
+					"name": "小红书",
+					"description": "小红书平台官方工具入口",
+					"sortOrder": 6,
+					"links": [
+						{
+							"id": "lnk-040",
+							"name": "小红书",
+							"url": "https://www.xiaohongshu.com/explore",
+							"description": "小红书主站",
+							"tags": [
+								"小红书",
+								"平台首页"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-041",
+							"name": "红薯数据",
+							"url": "https://xhs.huitun.com/#/home",
+							"description": "灰豚旗下小红书数据分析平台",
+							"tags": [
+								"小红书",
+								"数据分析"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-042",
+							"name": "创作服务平台",
+							"url": "https://creator.xiaohongshu.com/login?redirectReason=401",
+							"description": "小红书创作者管理平台",
+							"tags": [
+								"小红书",
+								"创作者"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-043",
+							"name": "直播管理",
+							"url": "https://redlive.xiaohongshu.com/live_login?source=official",
+							"description": "小红书直播管理后台",
+							"tags": [
+								"小红书",
+								"直播"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-044",
+							"name": "专业号",
+							"url": "https://pro.xiaohongshu.com/ares/login?redirectTo=%2F",
+							"description": "小红书专业号管理平台",
+							"tags": [
+								"小红书",
+								"商家认证"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-045",
+							"name": "聚光平台",
+							"url": "https://ad.xiaohongshu.com/",
+							"description": "小红书广告投放平台",
+							"tags": [
+								"小红书",
+								"广告投放"
+							],
+							"sortOrder": 6,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-046",
+							"name": "蒲公英",
+							"url": "https://pgy.xiaohongshu.com/",
+							"description": "小红书品牌合作平台",
+							"tags": [
+								"小红书",
+								"品牌合作",
+								"达人"
+							],
+							"sortOrder": 7,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-047",
+							"name": "小红书电商",
+							"url": "https://zhaoshang.xiaohongshu.com/merchant/login",
+							"description": "小红书电商商家入驻平台",
+							"tags": [
+								"小红书",
+								"电商",
+								"入驻"
+							],
+							"sortOrder": 8,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-048",
+							"name": "MCN 入驻",
+							"url": "https://creator.xiaohongshu.com/mcn-introduce?source=official",
+							"description": "小红书 MCN 机构入驻",
+							"tags": [
+								"小红书",
+								"MCN",
+								"入驻"
+							],
+							"sortOrder": 9,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "kuaishou",
+					"name": "快手电商",
+					"description": "快手电商平台官方工具入口",
+					"sortOrder": 7,
+					"links": [
+						{
+							"id": "lnk-049",
+							"name": "快手",
+							"url": "https://www.kuaishou.com/",
+							"description": "快手主站",
+							"tags": [
+								"快手",
+								"平台首页"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-050",
+							"name": "快手电商",
+							"url": "https://www.kwaixiaodian.com/",
+							"description": "快手电商商家平台",
+							"tags": [
+								"快手",
+								"电商平台"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-051",
+							"name": "磁力万象",
+							"url": "https://wanxiang.e.kuaishou.com/",
+							"description": "快手数据分析平台",
+							"tags": [
+								"快手",
+								"数据分析"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-052",
+							"name": "磁力智投",
+							"url": "https://ad.e.kuaishou.com/welcome",
+							"description": "快手广告投放平台",
+							"tags": [
+								"快手",
+								"广告投放"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-053",
+							"name": "快手联盟",
+							"url": "https://u.kuaishou.com/#/home",
+							"description": "快手推广联盟平台",
+							"tags": [
+								"快手",
+								"推广联盟"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-054",
+							"name": "磁力引擎",
+							"url": "https://e.kuaishou.com/#/e/home",
+							"description": "快手商业化平台",
+							"tags": [
+								"快手",
+								"商业化"
+							],
+							"sortOrder": 6,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-055",
+							"name": "开放平台",
+							"url": "https://open.kuaishou.com/platform",
+							"description": "快手开放平台",
+							"tags": [
+								"快手",
+								"开放平台",
+								"API"
+							],
+							"sortOrder": 7,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-056",
+							"name": "磁力方舟",
+							"url": "https://fangzhou.e.kuaishou.com/",
+							"description": "快手品牌数据资产管理平台",
+							"tags": [
+								"快手",
+								"品牌数据",
+								"资产管理"
+							],
+							"sortOrder": 8,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "alibaba1688",
+					"name": "1688/阿里巴巴",
+					"description": "1688 平台官方工具入口",
+					"sortOrder": 8,
+					"links": [
+						{
+							"id": "lnk-057",
+							"name": "1688",
+							"url": "https://www.1688.com/",
+							"description": "阿里巴巴 1688 批发平台",
+							"tags": [
+								"1688",
+								"平台首页"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-058",
+							"name": "生意参谋",
+							"url": "https://sycm.1688.com/ms/home/home",
+							"description": "1688 官方数据分析工具",
+							"tags": [
+								"1688",
+								"数据分析"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-059",
+							"name": "学习中心",
+							"url": "https://peixun.1688.com/",
+							"description": "1688 官方培训学习平台",
+							"tags": [
+								"1688",
+								"培训",
+								"学习"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-060",
+							"name": "诚信通",
+							"url": "https://cxt.1688.com/",
+							"description": "1688 诚信通会员服务",
+							"tags": [
+								"1688",
+								"会员服务"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-061",
+							"name": "服务市场",
+							"url": "https://app.1688.com/",
+							"description": "1688 应用服务市场",
+							"tags": [
+								"1688",
+								"服务市场"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-062",
+							"name": "供应商平台",
+							"url": "https://gys.1688.com/",
+							"description": "1688 供应商管理平台",
+							"tags": [
+								"1688",
+								"供应商"
+							],
+							"sortOrder": 6,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-063",
+							"name": "买家工作台",
+							"url": "https://show.1688.com/live/activity/u9uul77e.html",
+							"description": "1688 买家采购工作台",
+							"tags": [
+								"1688",
+								"买家"
+							],
+							"sortOrder": 7,
+							"status": "active",
+							"note": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "design-creative",
+			"name": "设计与创意",
+			"icon": "🎨",
+			"description": "设计灵感、工具、素材、字体等创意资源",
+			"sortOrder": 3,
+			"subcategories": [
+				{
+					"id": "design-inspiration",
+					"name": "设计灵感与社区",
+					"description": "设计师社区与灵感参考网站",
+					"sortOrder": 1,
+					"links": [
+						{
+							"id": "lnk-064",
+							"name": "站酷",
+							"url": "https://www.zcool.com.cn/",
+							"description": "中国设计师互动平台",
+							"tags": [
+								"设计社区",
+								"灵感"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-065",
+							"name": "花瓣网",
+							"url": "https://huaban.com/",
+							"description": "图片灵感采集平台",
+							"tags": [
+								"灵感",
+								"采集"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-066",
+							"name": "优设网",
+							"url": "https://www.uisdc.com/",
+							"description": "优秀设计导航与教程",
+							"tags": [
+								"设计导航",
+								"教程"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-067",
+							"name": "设计之家",
+							"url": "https://www.sj33.cn/",
+							"description": "设计资源与资讯平台",
+							"tags": [
+								"设计资源",
+								"资讯"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-068",
+							"name": "致设计",
+							"url": "https://www.zhisheji.com/",
+							"description": "电商设计师社区",
+							"tags": [
+								"电商设计",
+								"社区"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-069",
+							"name": "秀设计",
+							"url": "https://www.xiusheji.com/",
+							"description": "设计作品展示平台",
+							"tags": [
+								"设计展示",
+								"灵感"
+							],
+							"sortOrder": 6,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-070",
+							"name": "古田路 9 号",
+							"url": "https://www.gtn9.com/index.aspx",
+							"description": "品牌创意设计平台",
+							"tags": [
+								"品牌设计",
+								"创意"
+							],
+							"sortOrder": 7,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-071",
+							"name": "UI 中国",
+							"url": "https://www.ui.cn/",
+							"description": "UI 设计师交流平台",
+							"tags": [
+								"UI设计",
+								"社区"
+							],
+							"sortOrder": 8,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-072",
+							"name": "设计达人",
+							"url": "https://www.shejidaren.com/",
+							"description": "设计资源与教程分享",
+							"tags": [
+								"设计资源",
+								"教程"
+							],
+							"sortOrder": 9,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-073",
+							"name": "优优网",
+							"url": "https://uiiiuiii.com/",
+							"description": "UI 设计教程平台",
+							"tags": [
+								"UI设计",
+								"教程"
+							],
+							"sortOrder": 10,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-074",
+							"name": "CND 设计网",
+							"url": "http://www.cndesign.com/",
+							"description": "中国设计网，设计资讯与资源",
+							"tags": [
+								"设计资讯",
+								"资源"
+							],
+							"sortOrder": 11,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "online-design-tools",
+					"name": "在线设计工具",
+					"description": "无需下载的在线设计平台与工具",
+					"sortOrder": 2,
+					"links": [
+						{
+							"id": "lnk-075",
+							"name": "稿定设计",
+							"url": "https://www.gaoding.com/",
+							"description": "在线设计编辑平台",
+							"tags": [
+								"在线设计",
+								"编辑"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-076",
+							"name": "懒设计 (Fotor)",
+							"url": "https://www.fotor.com.cn/",
+							"description": "在线图片编辑与设计工具",
+							"tags": [
+								"在线设计",
+								"图片编辑"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-077",
+							"name": "千图网",
+							"url": "https://www.58pic.com/",
+							"description": "设计素材与模板平台",
+							"tags": [
+								"设计素材",
+								"模板"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-078",
+							"name": "包图网",
+							"url": "https://ibaotu.com/",
+							"description": "原创设计素材平台",
+							"tags": [
+								"设计素材",
+								"原创"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-079",
+							"name": "90 设计",
+							"url": "https://90sheji.com/",
+							"description": "电商设计素材平台",
+							"tags": [
+								"电商设计",
+								"素材"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-080",
+							"name": "黄蜂网",
+							"url": "https://woofeng.cn/",
+							"description": "设计资源导航平台",
+							"tags": [
+								"设计导航",
+								"资源"
+							],
+							"sortOrder": 6,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-081",
+							"name": "酷家乐 3D 设计",
+							"url": "https://www.kujiale.com/",
+							"description": "在线 3D 云设计平台",
+							"tags": [
+								"3D设计",
+								"云设计"
+							],
+							"sortOrder": 7,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-082",
+							"name": "即时设计",
+							"url": "https://js.design/",
+							"description": "在线 UI/UX 协作设计工具",
+							"tags": [
+								"UI设计",
+								"协作"
+							],
+							"sortOrder": 8,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-083",
+							"name": "PPT 世界",
+							"url": "https://www.pptx.cn/",
+							"description": "PPT 模板与设计平台",
+							"tags": [
+								"PPT",
+								"模板"
+							],
+							"sortOrder": 9,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-084",
+							"name": "app 库",
+							"url": "https://uinotes.com/",
+							"description": "UI/UX 灵感与组件参考",
+							"tags": [
+								"UI设计",
+								"灵感"
+							],
+							"sortOrder": 10,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-085",
+							"name": "Freepik",
+							"url": "https://www.magnific.com/",
+							"description": "免费矢量图与素材平台",
+							"tags": [
+								"矢量图",
+								"素材"
+							],
+							"sortOrder": 11,
+							"status": "active",
+							"note": "原 https://www.freepik.com/ 已 301 迁移至 https://www.magnific.com/（探测于 2026-09-29）"
+						},
+						{
+							"id": "lnk-086",
+							"name": "线稿自动上色",
+							"url": "https://petalica.com/index_zh.html",
+							"description": "AI 线稿自动上色工具",
+							"tags": [
+								"AI",
+								"上色"
+							],
+							"sortOrder": 12,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-087",
+							"name": "在线 3D 生成",
+							"url": "http://www.ziticq.com/tool/3d.html",
+							"description": "在线 3D 文字效果生成",
+							"tags": [
+								"3D",
+								"文字效果"
+							],
+							"sortOrder": 13,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-088",
+							"name": "晶格化效果",
+							"url": "https://trianglify.io/",
+							"description": "在线三角晶格背景生成",
+							"tags": [
+								"背景生成",
+								"晶格"
+							],
+							"sortOrder": 14,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-089",
+							"name": "PS 插件",
+							"url": "https://ck.pszhuli.com/",
+							"description": "Photoshop 插件资源",
+							"tags": [
+								"PS",
+								"插件"
+							],
+							"sortOrder": 15,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-090",
+							"name": "在线图片优化",
+							"url": "https://imagecompressor.com/zh/",
+							"description": "在线图片压缩与优化",
+							"tags": [
+								"图片压缩",
+								"优化"
+							],
+							"sortOrder": 16,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "design-color",
+					"name": "配色工具",
+					"description": "设计师配色参考与调色板工具",
+					"sortOrder": 3,
+					"links": [
+						{
+							"id": "lnk-091",
+							"name": "Adobe Color",
+							"url": "https://color.adobe.com/zh/create/color-wheel",
+							"description": "Adobe 官方配色与色轮工具",
+							"tags": [
+								"配色",
+								"色轮"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-092",
+							"name": "中国色",
+							"url": "https://www.zhongguose.com/",
+							"description": "中国传统颜色参考",
+							"tags": [
+								"中国色",
+								"配色"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-093",
+							"name": "Nippon Colors",
+							"url": "https://nipponcolors.com/#umemurasaki",
+							"description": "日本传统颜色参考",
+							"tags": [
+								"日本色",
+								"配色"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-094",
+							"name": "在线渐变色",
+							"url": "https://webkul.github.io/coolhue/",
+							"description": "渐变色方案在线参考",
+							"tags": [
+								"渐变色",
+								"配色"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-095",
+							"name": "UI Gradients",
+							"url": "https://uigradients.com/#MegaTron",
+							"description": "UI 渐变配色推荐",
+							"tags": [
+								"渐变",
+								"配色"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-096",
+							"name": "fffuel",
+							"url": "https://fffuel.co/",
+							"description": "SVG 生成与配色工具合集",
+							"tags": [
+								"SVG",
+								"配色"
+							],
+							"sortOrder": 6,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "logo-design",
+					"name": "LOGO 设计",
+					"description": "LOGO 在线设计与品牌标识参考",
+					"sortOrder": 4,
+					"links": [
+						{
+							"id": "lnk-097",
+							"name": "钙网",
+							"url": "https://www.uugai.com/",
+							"description": "在线智能 LOGO 设计生成",
+							"tags": [
+								"LOGO",
+								"在线设计"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-098",
+							"name": "标小智",
+							"url": "https://www.logosc.cn/",
+							"description": "智能 LOGO 设计平台",
+							"tags": [
+								"LOGO",
+								"智能设计"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-099",
+							"name": "标志情报局",
+							"url": "https://www.logonews.cn/",
+							"description": "LOGO 设计资讯与灵感平台",
+							"tags": [
+								"LOGO",
+								"资讯",
+								"灵感"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "icons-illustrations",
+					"name": "图标与插画",
+					"description": "免费商用图标与插画资源",
+					"sortOrder": 5,
+					"links": [
+						{
+							"id": "lnk-100",
+							"name": "阿里巴巴矢量图标库",
+							"url": "https://www.iconfont.cn/",
+							"description": "国内最大免费矢量图标平台",
+							"tags": [
+								"图标",
+								"矢量"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-101",
+							"name": "Flaticon 图标大全",
+							"url": "https://www.flaticon.com/",
+							"description": "全球最大免费图标平台",
+							"tags": [
+								"图标",
+								"大全"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-102",
+							"name": "IconPark",
+							"url": "https://iconpark.oceanengine.com/illustrations",
+							"description": "字节跳动开源图标库",
+							"tags": [
+								"图标",
+								"开源",
+								"字节跳动"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-103",
+							"name": "OUCH",
+							"url": "https://icons8.com/illustrations",
+							"description": "免费高质量插画资源",
+							"tags": [
+								"插画",
+								"免费"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-104",
+							"name": "有色图标",
+							"url": "https://iconstore.co/",
+							"description": "免费 SVG 图标集合",
+							"tags": [
+								"图标",
+								"SVG",
+								"免费"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-105",
+							"name": "unDraw",
+							"url": "https://undraw.co/illustrations",
+							"description": "开源 SVG 插画资源",
+							"tags": [
+								"插画",
+								"SVG",
+								"开源"
+							],
+							"sortOrder": 6,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-106",
+							"name": "Free Vector",
+							"url": "https://www.freevector.com/",
+							"description": "免费矢量插画素材",
+							"tags": [
+								"插画",
+								"矢量",
+								"免费"
+							],
+							"sortOrder": 7,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "fonts",
+					"name": "字体资源",
+					"description": "中英文字体下载、识别与授权查询",
+					"sortOrder": 6,
+					"links": [
+						{
+							"id": "lnk-107",
+							"name": "字由",
+							"url": "https://www.hellofont.cn/",
+							"description": "字体管理与预览工具",
+							"tags": [
+								"字体",
+								"管理"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-108",
+							"name": "字体天下",
+							"url": "https://www.fonts.net.cn/",
+							"description": "中文字体下载平台",
+							"tags": [
+								"字体",
+								"中文"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-109",
+							"name": "猫啃",
+							"url": "https://www.maoken.com/all-fonts",
+							"description": "免费商用中文字体合集",
+							"tags": [
+								"字体",
+								"免费商用",
+								"中文"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-110",
+							"name": "字魂",
+							"url": "https://izihun.com/",
+							"description": "商用字体授权平台",
+							"tags": [
+								"字体",
+								"商用授权"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-111",
+							"name": "免费字体大全 (FontSpace)",
+							"url": "https://www.fontspace.com/",
+							"description": "全球免费字体下载平台",
+							"tags": [
+								"字体",
+								"免费"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-112",
+							"name": "chinaz 字体",
+							"url": "https://font.chinaz.com/",
+							"description": "站长之家字体下载",
+							"tags": [
+								"字体",
+								"下载"
+							],
+							"sortOrder": 6,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-113",
+							"name": "iFonts",
+							"url": "https://ifonts.com/",
+							"description": "字体设计与下载平台",
+							"tags": [
+								"字体",
+								"设计"
+							],
+							"sortOrder": 7,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-114",
+							"name": "字体传奇",
+							"url": "http://www.ziticq.com/Material",
+							"description": "字体设计与素材平台",
+							"tags": [
+								"字体",
+								"设计"
+							],
+							"sortOrder": 8,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-115",
+							"name": "课游视界",
+							"url": "https://www.keyoou.com/Article",
+							"description": "字体设计教程与资源",
+							"tags": [
+								"字体",
+								"教程"
+							],
+							"sortOrder": 9,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-116",
+							"name": "字体识别",
+							"url": "https://www.qiuziti.com/",
+							"description": "图片字体识别工具",
+							"tags": [
+								"字体",
+								"识别"
+							],
+							"sortOrder": 10,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-117",
+							"name": "识字体网",
+							"url": "https://www.likefont.com/#google_vignette",
+							"description": "AI 字体识别平台",
+							"tags": [
+								"字体",
+								"AI识别"
+							],
+							"sortOrder": 11,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-118",
+							"name": "360 查字体授权",
+							"url": "https://fonts.safe.360.cn/",
+							"description": "免费查询字体商业授权",
+							"tags": [
+								"字体",
+								"授权",
+								"版权"
+							],
+							"sortOrder": 12,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-119",
+							"name": "在线书法字体转换",
+							"url": "http://www.shufaziti.com/",
+							"description": "书法字体在线生成",
+							"tags": [
+								"书法",
+								"字体生成"
+							],
+							"sortOrder": 13,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-120",
+							"name": "动效文字生成器",
+							"url": "http://www.ziticq.com/tool/dx.html",
+							"description": "在线文字动效生成",
+							"tags": [
+								"文字动效",
+								"生成器"
+							],
+							"sortOrder": 14,
+							"status": "active",
+							"note": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "image-processing",
+			"name": "图片处理",
+			"icon": "🖼️",
+			"description": "在线抠图、修图、图片优化等处理工具",
+			"sortOrder": 4,
+			"subcategories": [
+				{
+					"id": "remove-background",
+					"name": "抠图去背景",
+					"description": "AI 智能抠图与背景处理工具",
+					"sortOrder": 1,
+					"links": [
+						{
+							"id": "lnk-121",
+							"name": "一键去背景",
+							"url": "https://zh.bgsub.com/webapp/",
+							"description": "AI 快速去除图片背景",
+							"tags": [
+								"抠图",
+								"去背景",
+								"AI"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": "原域名 bgsub.cn 已跳转，已更新"
+						},
+						{
+							"id": "lnk-122",
+							"name": "一键在线抠图",
+							"url": "https://www.fococlipping.com/",
+							"description": "在线智能抠图工具",
+							"tags": [
+								"抠图",
+								"在线"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-123",
+							"name": "全自动 AI 抠图",
+							"url": "https://www.6k6k.cn/",
+							"description": "全自动 AI 图片抠图",
+							"tags": [
+								"AI",
+								"抠图",
+								"全自动"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-124",
+							"name": "佐糖智能抠图",
+							"url": "https://picwish.cn/tools",
+							"description": "AI 智能图片处理与抠图工具集",
+							"tags": [
+								"AI",
+								"抠图",
+								"图片处理"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-125",
+							"name": "免抠图网",
+							"url": "https://miankoutupian.com/",
+							"description": "免抠图片素材下载",
+							"tags": [
+								"免抠",
+								"素材"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-126",
+							"name": "在线生成白底图",
+							"url": "https://zh.clippingmagic.com/",
+							"description": "图片背景自动变白处理",
+							"tags": [
+								"白底图",
+								"抠图"
+							],
+							"sortOrder": 6,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-127",
+							"name": "位图转矢量图",
+							"url": "https://vectorizer.ai/",
+							"description": "AI 位图转矢量图工具",
+							"tags": [
+								"矢量图",
+								"转换",
+								"AI"
+							],
+							"sortOrder": 7,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "image-restore",
+					"name": "图片修复与放大",
+					"description": "AI 图片画质增强与分辨率提升",
+					"sortOrder": 2,
+					"links": [
+						{
+							"id": "lnk-128",
+							"name": "真人照片修复",
+							"url": "https://icons8.com/upscaler",
+							"description": "AI 人像照片画质增强",
+							"tags": [
+								"AI",
+								"修复",
+								"人像"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-129",
+							"name": "图片放大",
+							"url": "https://www.vidmore.com/zh/image-upscaler/#reviews",
+							"description": "AI 无损图片放大",
+							"tags": [
+								"AI",
+								"放大",
+								"无损"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-130",
+							"name": "Upscayl 图片放大",
+							"url": "https://www.upscayl.org/",
+							"description": "开源 AI 图片超分辨率工具",
+							"tags": [
+								"AI",
+								"放大",
+								"开源"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-131",
+							"name": "AI 图片放大 (Bigjpg)",
+							"url": "https://bigjpg.com/",
+							"description": "AI 图片无损放大",
+							"tags": [
+								"AI",
+								"放大",
+								"无损"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-132",
+							"name": "AI 图片修复",
+							"url": "https://jpghd.com/",
+							"description": "AI 老照片/模糊图片修复",
+							"tags": [
+								"AI",
+								"修复",
+								"老照片"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "image-compress-effects",
+					"name": "图片压缩与特效",
+					"description": "图片压缩、特效制作与可视化工具",
+					"sortOrder": 3,
+					"links": [
+						{
+							"id": "lnk-133",
+							"name": "在线图片压缩",
+							"url": "https://www.tuhaokuai.com/",
+							"description": "批量图片智能压缩",
+							"tags": [
+								"压缩",
+								"批量"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-134",
+							"name": "在线图片优化",
+							"url": "https://imagecompressor.com/zh/",
+							"description": "图片质量优化与压缩",
+							"tags": [
+								"优化",
+								"压缩"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-135",
+							"name": "故障风图片制作",
+							"url": "https://moshpro.app/",
+							"description": "Glitch 故障艺术图片效果",
+							"tags": [
+								"故障风",
+								"Glitch",
+								"特效"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": "原域名 photomosh.com 已跳转，已更新"
+						},
+						{
+							"id": "lnk-136",
+							"name": "GIF 压缩",
+							"url": "https://www.soogif.com/compress",
+							"description": "GIF 动图压缩工具",
+							"tags": [
+								"GIF",
+								"压缩"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-137",
+							"name": "黄金比在线计算",
+							"url": "https://www.shejidaren.com/examples/tools/golden-ratio/index.html",
+							"description": "黄金比例可视化计算工具",
+							"tags": [
+								"黄金比",
+								"设计工具"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "image-resources",
+					"name": "图片素材库",
+					"description": "高质量免版权图片与视觉素材资源",
+					"sortOrder": 4,
+					"links": [
+						{
+							"id": "lnk-138",
+							"name": "视觉中国",
+							"url": "https://www.vcg.com/",
+							"description": "正版商业图片素材平台",
+							"tags": [
+								"图片",
+								"正版素材",
+								"商用"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-139",
+							"name": "图虫创意",
+							"url": "https://stock.tuchong.com/",
+							"description": "摄影师原创素材平台",
+							"tags": [
+								"图片",
+								"摄影",
+								"原创"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-140",
+							"name": "摄图网",
+							"url": "https://699pic.com/",
+							"description": "高质量图片素材下载",
+							"tags": [
+								"图片",
+								"素材"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-141",
+							"name": "昵图网",
+							"url": "https://www.nipic.com/",
+							"description": "设计素材共享平台",
+							"tags": [
+								"图片",
+								"设计素材"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-142",
+							"name": "红动中国",
+							"url": "https://www.redocn.com/",
+							"description": "设计素材与模板平台",
+							"tags": [
+								"设计素材",
+								"模板"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-143",
+							"name": "觅知网",
+							"url": "https://www.51miz.com/",
+							"description": "PPT/设计/素材资源平台",
+							"tags": [
+								"PPT",
+								"设计素材"
+							],
+							"sortOrder": 6,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-144",
+							"name": "觅元素",
+							"url": "https://www.51yuansu.com/",
+							"description": "免抠设计元素平台",
+							"tags": [
+								"免抠",
+								"设计元素"
+							],
+							"sortOrder": 7,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-145",
+							"name": "千库网",
+							"url": "https://588ku.com/",
+							"description": "设计素材与模板下载",
+							"tags": [
+								"设计素材",
+								"模板"
+							],
+							"sortOrder": 8,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-146",
+							"name": "图怪兽",
+							"url": "https://818ps.com/",
+							"description": "在线海报设计平台",
+							"tags": [
+								"海报",
+								"在线设计"
+							],
+							"sortOrder": 9,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-147",
+							"name": "素材国度",
+							"url": "https://www.dc10000.com/",
+							"description": "免费设计素材下载",
+							"tags": [
+								"设计素材",
+								"免费"
+							],
+							"sortOrder": 10,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-148",
+							"name": "Pexels",
+							"url": "https://www.pexels.com/zh-cn/",
+							"description": "免费可商用图片素材",
+							"tags": [
+								"图片",
+								"免费商用"
+							],
+							"sortOrder": 11,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-149",
+							"name": "Pixabay",
+							"url": "https://pixabay.com/zh/photos/",
+							"description": "全球免费图片与视频素材",
+							"tags": [
+								"图片",
+								"视频",
+								"免费"
+							],
+							"sortOrder": 12,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-150",
+							"name": "500px",
+							"url": "https://500px.com.cn/",
+							"description": "专业摄影社区与素材",
+							"tags": [
+								"摄影",
+								"社区"
+							],
+							"sortOrder": 13,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-151",
+							"name": "Veer",
+							"url": "https://www.veer.com/",
+							"description": "正版创意素材平台",
+							"tags": [
+								"图片",
+								"正版素材"
+							],
+							"sortOrder": 14,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-152",
+							"name": "天空之城",
+							"url": "https://www.skypixel.com/",
+							"description": "航拍摄影社区",
+							"tags": [
+								"航拍",
+								"摄影"
+							],
+							"sortOrder": 15,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-153",
+							"name": "WallpapersWide",
+							"url": "https://wallpaperswide.com/",
+							"description": "高清壁纸下载",
+							"tags": [
+								"壁纸",
+								"高清"
+							],
+							"sortOrder": 16,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-154",
+							"name": "FoodiesFeed",
+							"url": "https://www.foodiesfeed.com/",
+							"description": "免费美食摄影素材",
+							"tags": [
+								"美食",
+								"摄影",
+								"免费"
+							],
+							"sortOrder": 17,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-155",
+							"name": "必应图片搜索",
+							"url": "https://cn.bing.com/?scope=images&nr=1&FORM=NOFORM",
+							"description": "必应搜索引擎图片搜索",
+							"tags": [
+								"搜索",
+								"图片"
+							],
+							"sortOrder": 18,
+							"status": "active",
+							"note": "原分类为图片素材，实为搜索引擎工具"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "video-creation",
+			"name": "视频与音频创作",
+			"icon": "🎬",
+			"description": "视频剪辑、配音、素材下载等创作工具",
+			"sortOrder": 5,
+			"subcategories": [
+				{
+					"id": "video-editing",
+					"name": "视频编辑工具",
+					"description": "在线与桌面端视频剪辑制作工具",
+					"sortOrder": 1,
+					"links": [
+						{
+							"id": "lnk-156",
+							"name": "剪映",
+							"url": "https://www.capcut.cn/",
+							"description": "抖音官方视频剪辑工具",
+							"tags": [
+								"剪辑",
+								"抖音",
+								"视频"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": "原在「抖音」中重复，已去重统一归入"
+						},
+						{
+							"id": "lnk-157",
+							"name": "爱剪辑",
+							"url": "https://www.ijianji.com/",
+							"description": "通用视频编辑软件",
+							"tags": [
+								"剪辑",
+								"视频编辑"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": "原被错配在「快手」分类中，已修正"
+						},
+						{
+							"id": "lnk-158",
+							"name": "格式工厂",
+							"url": "http://www.pcgeshi.com/index.html",
+							"description": "万能多媒体格式转换工具",
+							"tags": [
+								"格式转换",
+								"多媒体"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-159",
+							"name": "视频背景抠图",
+							"url": "https://www.unscreen.com/",
+							"description": "AI 视频背景去除工具",
+							"tags": [
+								"AI",
+								"抠图",
+								"视频"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-160",
+							"name": "万彩动画大师",
+							"url": "https://www.animiz.cn/",
+							"description": "MG 动画视频制作工具",
+							"tags": [
+								"动画",
+								"MG动画"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-161",
+							"name": "腾讯智影",
+							"url": "https://zenvideo.qq.com/",
+							"description": "腾讯 AI 视频创作平台",
+							"tags": [
+								"AI",
+								"视频创作",
+								"腾讯"
+							],
+							"sortOrder": 6,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-162",
+							"name": "网易见外工作台",
+							"url": "https://jianwai.youdao.com/",
+							"description": "AI 视频字幕与翻译工具",
+							"tags": [
+								"AI",
+								"字幕",
+								"翻译"
+							],
+							"sortOrder": 7,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "video-resources",
+					"name": "视频素材与灵感",
+					"description": "免费视频素材、灵感与下载资源",
+					"sortOrder": 2,
+					"links": [
+						{
+							"id": "lnk-163",
+							"name": "Coverr",
+							"url": "https://coverr.co/",
+							"description": "免费无版权视频素材",
+							"tags": [
+								"视频",
+								"素材",
+								"免费"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": "原被错配在「图片素材」中，此为视频素材站"
+						},
+						{
+							"id": "lnk-164",
+							"name": "黑罐头素材",
+							"url": "https://www.heycan.com/home",
+							"description": "剪映素材资源平台",
+							"tags": [
+								"剪映",
+								"素材"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-165",
+							"name": "新片场",
+							"url": "https://www.xinpianchang.com/",
+							"description": "国内专业视频创作社区",
+							"tags": [
+								"视频",
+								"社区",
+								"创作"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-166",
+							"name": "开眼",
+							"url": "https://home.eyepetizer.net/",
+							"description": "全球优质短视频精选平台",
+							"tags": [
+								"视频",
+								"精选",
+								"灵感"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-167",
+							"name": "灵感视频创意",
+							"url": "https://www.tvcbook.com/discover/tags/1/1/1.html",
+							"description": "广告创意视频灵感",
+							"tags": [
+								"广告",
+								"灵感",
+								"视频"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-168",
+							"name": "优视榜单",
+							"url": "https://y.tvcbook.com/rank/index.html",
+							"description": "广告视频榜单分析",
+							"tags": [
+								"广告",
+								"榜单",
+								"视频"
+							],
+							"sortOrder": 6,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-169",
+							"name": "LookAE 后期特效",
+							"url": "https://www.lookae.com/",
+							"description": "AE/PR 后期特效资源",
+							"tags": [
+								"AE",
+								"PR",
+								"特效"
+							],
+							"sortOrder": 7,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-170",
+							"name": "CG 资源网",
+							"url": "https://www.cgown.com/",
+							"description": "CG 教程与素材资源",
+							"tags": [
+								"CG",
+								"教程",
+								"素材"
+							],
+							"sortOrder": 8,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-171",
+							"name": "唧唧 down",
+							"url": "http://client.jijidown.com/",
+							"description": "B 站视频下载工具",
+							"tags": [
+								"下载",
+								"B站"
+							],
+							"sortOrder": 9,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-172",
+							"name": "A 站视频下载",
+							"url": "https://acfun.iiilab.com/",
+							"description": "AcFun 视频下载工具",
+							"tags": [
+								"下载",
+								"A站"
+							],
+							"sortOrder": 10,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-173",
+							"name": "视频去水印",
+							"url": "https://online-video-cutter.com/cn/remove-logo",
+							"description": "在线视频水印去除工具",
+							"tags": [
+								"视频",
+								"去水印"
+							],
+							"sortOrder": 11,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "audio-voice",
+					"name": "音频与配音",
+					"description": "文字转语音、音效配乐资源",
+					"sortOrder": 3,
+					"links": [
+						{
+							"id": "lnk-174",
+							"name": "在线配音（TTSMaker）",
+							"url": "https://ttsmaker.cn/",
+							"description": "在线文本转语音配音",
+							"tags": [
+								"TTS",
+								"配音"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-175",
+							"name": "配音神器",
+							"url": "https://peiyinshenqi.club/#/",
+							"description": "AI 智能配音平台",
+							"tags": [
+								"AI",
+								"配音"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-176",
+							"name": "聆听音效",
+							"url": "https://www.ear0.com/sound",
+							"description": "免费音效下载平台",
+							"tags": [
+								"音效",
+								"免费"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-177",
+							"name": "爱给音效配乐",
+							"url": "https://www.aigei.com/",
+							"description": "免费音效与配乐资源",
+							"tags": [
+								"音效",
+								"配乐",
+								"免费"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-178",
+							"name": "免费音乐搜索器",
+							"url": "http://dspjx.com/music/index.php",
+							"description": "免费背景音乐搜索",
+							"tags": [
+								"音乐",
+								"搜索"
+							],
+							"sortOrder": 5,
+							"status": "broken",
+							"note": "404 失效，建议移除或寻找替代"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ai-tools",
+			"name": "AI 智能工具",
+			"icon": "🤖",
+			"description": "AI 创作、智能写作等人工智能工具",
+			"sortOrder": 6,
+			"subcategories": [
+				{
+					"id": "ai-creation",
+					"name": "AI 创作",
+					"description": "AI 图像、设计生成创作工具",
+					"sortOrder": 1,
+					"links": [
+						{
+							"id": "lnk-179",
+							"name": "ChatGPT",
+							"url": "https://chat.openai.com/",
+							"description": "OpenAI 大语言模型对话 AI",
+							"tags": [
+								"AI",
+								"对话",
+								"大模型"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-180",
+							"name": "无界 AI",
+							"url": "https://www.wujieai.com/ai",
+							"description": "AI 艺术创作平台",
+							"tags": [
+								"AI",
+								"艺术",
+								"创作"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-181",
+							"name": "大设",
+							"url": "https://www.bigbigai.com/gallery",
+							"description": "AI 设计创作平台",
+							"tags": [
+								"AI",
+								"设计"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-182",
+							"name": "千图 AI",
+							"url": "https://ai.58pic.com/",
+							"description": "千图网 AI 设计工具",
+							"tags": [
+								"AI",
+								"设计"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-183",
+							"name": "千库 AI 无限画",
+							"url": "https://588ku.com/ai/wuxianhua/Home",
+							"description": "千库网 AI 绘画与设计",
+							"tags": [
+								"AI",
+								"绘画"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "ai-writing",
+					"name": "智能写作",
+					"description": "AI 辅助内容创作与文案生成",
+					"sortOrder": 2,
+					"links": [
+						{
+							"id": "lnk-184",
+							"name": "giiso 写作机器人",
+							"url": "https://www.giiso.com/#/",
+							"description": "AI 智能写作助手",
+							"tags": [
+								"AI",
+								"写作"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-185",
+							"name": "Get 智能写作",
+							"url": "https://www.chulaizou.com/",
+							"description": "AI 辅助写作平台",
+							"tags": [
+								"AI",
+								"写作"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-186",
+							"name": "Ymiai",
+							"url": "https://www.puaai.cn/#/chat/create",
+							"description": "AI 对话与内容生成",
+							"tags": [
+								"AI",
+								"对话"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "content-copywriting",
+			"name": "内容与数据",
+			"icon": "📊",
+			"description": "内容创作、热点追踪、数据分析参考工具",
+			"sortOrder": 7,
+			"subcategories": [
+				{
+					"id": "trends-index",
+					"name": "热点与指数",
+					"description": "互联网热点趋势与搜索指数查询",
+					"sortOrder": 1,
+					"links": [
+						{
+							"id": "lnk-187",
+							"name": "百度指数",
+							"url": "https://index.baidu.com/v2/index.html#/",
+							"description": "百度搜索趋势分析",
+							"tags": [
+								"百度",
+								"搜索趋势"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-188",
+							"name": "头条指数",
+							"url": "https://trendinsight.oceanengine.com/",
+							"description": "巨量引擎内容趋势洞察",
+							"tags": [
+								"巨量引擎",
+								"趋势"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-189",
+							"name": "新榜",
+							"url": "https://newrank.cn/",
+							"description": "新媒体数据与排行分析",
+							"tags": [
+								"新媒体",
+								"排名"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "content-editing",
+					"name": "排版编辑",
+					"description": "公众号与新媒体内容排版工具",
+					"sortOrder": 2,
+					"links": [
+						{
+							"id": "lnk-190",
+							"name": "365 编辑器",
+							"url": "https://www.365editor.com/",
+							"description": "公众号等新媒体排版工具",
+							"tags": [
+								"公众号",
+								"排版"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "copywriting-ref",
+					"name": "文案参考",
+					"description": "文案灵感与写作辅助资源",
+					"sortOrder": 3,
+					"links": [
+						{
+							"id": "lnk-191",
+							"name": "知乎",
+							"url": "https://www.zhihu.com/signin?next=%2F",
+							"description": "高质量问答社区",
+							"tags": [
+								"问答",
+								"知识"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-192",
+							"name": "句子迷",
+							"url": "https://www.juzimi.com.cn/",
+							"description": "美句文案收集平台",
+							"tags": [
+								"文案",
+								"美句"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-193",
+							"name": "讯飞语记",
+							"url": "https://iflynote.com/",
+							"description": "讯飞语音转文字记录工具",
+							"tags": [
+								"语音",
+								"转文字",
+								"讯飞"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "utility-tools",
+			"name": "实用工具",
+			"icon": "🔧",
+			"description": "文件转换、PDF 处理、二维码等效率工具",
+			"sortOrder": 8,
+			"subcategories": [
+				{
+					"id": "format-conversion",
+					"name": "格式转换",
+					"description": "多格式文件在线转换工具",
+					"sortOrder": 1,
+					"links": [
+						{
+							"id": "lnk-194",
+							"name": "最全格式转换 (Alltoall)",
+							"url": "https://www.alltoall.net/",
+							"description": "全能文件格式在线转换",
+							"tags": [
+								"格式转换",
+								"全能"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-195",
+							"name": "在线转换 (Aconvert)",
+							"url": "https://www.aconvert.com/cn/",
+							"description": "多格式文档/图片/音视频转换",
+							"tags": [
+								"格式转换"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-196",
+							"name": "文件转换器 (Convertio)",
+							"url": "https://convertio.co/zh/",
+							"description": "在线文件格式转换平台",
+							"tags": [
+								"格式转换"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-197",
+							"name": "易转换",
+							"url": "https://www.easeconvert.com/",
+							"description": "在线文件格式转换工具",
+							"tags": [
+								"格式转换"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-198",
+							"name": "依奇在线转换",
+							"url": "https://www.wdku.net/",
+							"description": "在线文档格式转换",
+							"tags": [
+								"格式转换",
+								"文档"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "pdf-tools",
+					"name": "PDF 工具",
+					"description": "PDF 编辑、转换、合并处理工具",
+					"sortOrder": 2,
+					"links": [
+						{
+							"id": "lnk-199",
+							"name": "PDF 工具 (PDF24)",
+							"url": "https://tools.pdf24.org/zh/",
+							"description": "免费在线 PDF 全套处理工具",
+							"tags": [
+								"PDF",
+								"免费"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-200",
+							"name": "PDF 在线处理 (iLovePDF)",
+							"url": "https://www.ilovepdf.com/zh-cn",
+							"description": "PDF 合并/拆分/压缩/转换",
+							"tags": [
+								"PDF",
+								"处理"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-201",
+							"name": "Smallpdf",
+							"url": "https://smallpdf.com/cn",
+							"description": "PDF 在线处理工具平台",
+							"tags": [
+								"PDF",
+								"处理"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-202",
+							"name": "迅捷 PDF 转换器",
+							"url": "https://app.xunjiepdf.com/",
+							"description": "专业 PDF 转换与处理工具",
+							"tags": [
+								"PDF",
+								"转换"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-203",
+							"name": "云展网",
+							"url": "https://www.yunzhan365.com/",
+							"description": "PDF 转电子画册/翻页书",
+							"tags": [
+								"PDF",
+								"电子画册"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						}
+					]
+				},
+				{
+					"id": "other-utils",
+					"name": "其他效率工具",
+					"description": "二维码、文件传输、设计开发等实用工具",
+					"sortOrder": 3,
+					"links": [
+						{
+							"id": "lnk-204",
+							"name": "草料二维码",
+							"url": "https://cli.im/",
+							"description": "二维码在线生成与管理平台",
+							"tags": [
+								"二维码"
+							],
+							"sortOrder": 1,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-205",
+							"name": "大文件传输（文叔叔）",
+							"url": "https://www.wenshushu.cn/",
+							"description": "在线大文件安全传输",
+							"tags": [
+								"文件传输",
+								"大文件"
+							],
+							"sortOrder": 2,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-206",
+							"name": "文件全能王 (TinyWow)",
+							"url": "https://tinywow.com/",
+							"description": "全能文件处理在线工具",
+							"tags": [
+								"文件处理",
+								"全能"
+							],
+							"sortOrder": 3,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-207",
+							"name": "一键生成图表",
+							"url": "https://chartcube.alipay.com/upload",
+							"description": "数据可视化图表生成",
+							"tags": [
+								"图表",
+								"数据可视化"
+							],
+							"sortOrder": 4,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-208",
+							"name": "地址生成器",
+							"url": "https://www.cccitu.com/2205434.html",
+							"description": "省市区地址生成工具",
+							"tags": [
+								"地址"
+							],
+							"sortOrder": 5,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-209",
+							"name": "摹客",
+							"url": "https://www.mockplus.cn/",
+							"description": "产品原型设计协作平台",
+							"tags": [
+								"原型",
+								"协作",
+								"产品设计"
+							],
+							"sortOrder": 6,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-210",
+							"name": "幕布",
+							"url": "https://mubu.com/home",
+							"description": "思维导图与大纲笔记工具",
+							"tags": [
+								"思维导图",
+								"笔记"
+							],
+							"sortOrder": 7,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-211",
+							"name": "奇迹秀工具箱",
+							"url": "https://www.qijishow.com/down/index.html",
+							"description": "设计师工具集合平台",
+							"tags": [
+								"设计师",
+								"工具箱"
+							],
+							"sortOrder": 8,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-212",
+							"name": "极限词查询",
+							"url": "https://jixianci.fkdmg.com/",
+							"description": "广告法极限词合规查询",
+							"tags": [
+								"合规",
+								"广告法"
+							],
+							"sortOrder": 9,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-213",
+							"name": "在线画册生成 (FLBOOK)",
+							"url": "https://flbook.com.cn/",
+							"description": "在线电子画册/翻页书制作",
+							"tags": [
+								"电子画册",
+								"制作"
+							],
+							"sortOrder": 10,
+							"status": "active",
+							"note": null
+						},
+						{
+							"id": "lnk-214",
+							"name": "腾讯云语音识别",
+							"url": "https://cloud.tencent.com/",
+							"description": "腾讯云 ASR 语音识别服务",
+							"tags": [
+								"语音识别",
+								"腾讯云"
+							],
+							"sortOrder": 11,
+							"status": "active",
+							"note": "链接指向腾讯云首页，建议替换为 ASR 专题页"
+						}
+					]
+				}
+			]
+		}
+	]
+}
