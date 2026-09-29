@@ -1,0 +1,44 @@
+/**
+ * Element Plus 主题令牌覆盖
+ * 把组件库的 CSS 变量对齐到 src/styles/variables.scss 中的品牌令牌
+ */
+
+:root {
+	// ===== 主色 =====
+	--el-color-primary: #{$color-primary};
+	--el-color-primary-light-3: #5f9def;
+	--el-color-primary-light-5: #8db9f4;
+	--el-color-primary-light-7: #bad5f8;
+	--el-color-primary-light-8: #d1e3fa;
+	--el-color-primary-light-9: #{$color-primary-light};
+	--el-color-primary-dark-2: #{$color-primary-dark};
+
+	// ===== 语义色 =====
+	--el-color-success: #{$color-success};
+	--el-color-warning: #{$color-warning};
+	--el-color-danger: #{$color-danger};
+	--el-color-error: #{$color-danger};
+
+	// ===== 文本 =====
+	--el-text-color-primary: #{$color-text};
+	--el-text-color-regular: #{$color-text-secondary};
+	--el-text-color-secondary: #{$color-text-muted};
+	--el-text-color-placeholder: #{$color-text-muted};
+	--el-text-color-disabled: #{$color-text-muted};
+
+	// ===== 边框与背景 =====
+	--el-border-color: #{$color-border};
+	--el-border-color-light: #{$color-border-light};
+	--el-border-color-lighter: #{$color-border-light};
+	--el-bg-color: #{$color-bg-white};
+	--el-bg-color-page: #{$color-bg};
+
+	// ===== 字号与圆角 =====
+	--el-font-size-base: 14px;
+	--el-border-radius-base: #{$radius-md};
+	--el-border-radius-small: #{$radius-sm};
+
+	// ===== 阴影 =====
+	--el-box-shadow-light: #{$shadow-md};
+	--el-box-shadow: #{$shadow-md};
+}

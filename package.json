@@ -1,0 +1,40 @@
+{
+  "name": "xs-app-merchant-portal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "npm run check:spec && npm run check:skill && npm run check:deps && npm run check:kb",
+    "check:spec": "node ci/check-spec-refs.cjs",
+    "check:skill": "node ci/check-skill-sync.cjs",
+    "check:skill:sync": "node ci/check-skill-sync.cjs --sync",
+    "check:deps": "node ci/check-require-decls.cjs --test-dir=src",
+    "check:kb": "python ci/check-knowledge-facts.py",
+    "check:commit": "node ci/check-commit-msg.cjs",
+    "check:links": "node scripts/check-links.mjs",
+    "check:links:write": "node scripts/check-links.mjs --write"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
+    "element-plus": "^2.14.6",
+    "pinia": "^4.0.3",
+    "vue": "^3.5.43",
+    "vue-router": "^5.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.9",
+    "sass": "^1.105.0",
+    "unplugin-auto-import": "^21.1.0",
+    "unplugin-vue-components": "^32.1.0",
+    "vite": "^8.3.1"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "author": "XISHU <shallowlong@gmail.com>",
+  "license": "MIT",
+  "description": "电商人工具门户站 - 电商零售运营工具导航"
+}
